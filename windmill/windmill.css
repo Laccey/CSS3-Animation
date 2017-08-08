@@ -1,14 +1,18 @@
 body{
-    /*background:radial-gradient(900px at top,#043259 0%,#031d23 100%);*/
+    min-width: 800px;
+    min-height:400px;
 }
-
 .circle{
     width:500px;
     height:500px;
-    border-radius:100%;
-    margin:0 auto;
+    border-radius:50%;
+    /*margin:0 auto;*/
     background:linear-gradient(to bottom,#293955,#536e8d);
-    position:relative;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-250px;
+    margin-left:-250px;
     z-index:1;
     overflow:hidden;
 }
