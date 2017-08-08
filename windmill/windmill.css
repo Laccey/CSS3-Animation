@@ -1,0 +1,314 @@
+body{
+    /*background:radial-gradient(900px at top,#043259 0%,#031d23 100%);*/
+}
+
+.circle{
+    width:500px;
+    height:500px;
+    border-radius:100%;
+    margin:0 auto;
+    background:linear-gradient(to bottom,#293955,#536e8d);
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+}
+
+.content{
+    width:500px;
+    height:500px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin:0 auto;
+    box-shadow:0 0 100px black inset;
+    z-index:100;
+    position: relative;
+}
+
+.bg{
+    width:440px;
+    height:440px;
+    border-radius:50%;
+    /*margin:0 auto; */
+    /*background-color:#22668e;*/
+    background-image:radial-gradient(400px at top,#22668e 0%,#3b7d99 100%);
+    position:absolute;
+    top:30px;
+    left: 30px;
+    /*   z-index:1; */
+}
+
+.bg_1{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    /*background-color:#3b7d99;*/
+    background-image:radial-gradient(340px at top,#3b7d99 0%,#51979e 100%);
+    position:absolute;
+    top:30px;
+    left:30px;
+    z-index:1;
+}
+
+.bg_2{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    /*background-color:#51979e;*/
+    background-image:radial-gradient(300px at top,#51979e 0%,#61a4a5 100%);
+    position:absolute;
+    top:60px;
+    left:60px;
+    z-index:2;
+}
+
+.bg_3{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    /*background-color:#61a4a5;*/
+    background-image:radial-gradient(260px at top,#61a4a5 0%,#71b1a9 100%);
+    position:absolute;
+    top:90px;
+    left:90px;
+    z-index:3;
+}
+
+.bg_4{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    /*background-color:#71b1a9;*/
+    background-image:radial-gradient(200px at center,#71b1a9 0%,#87bcb3 100%);
+    position:absolute;
+    top:120px;
+    left:120px;
+    z-index:4;
+}
+
+.bg_5{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    /*background-color:#87bcb3;*/
+    background-image:radial-gradient(100px at center,#ddede2 0%,#87bcb3 100%);
+    position:absolute;
+    top:150px;
+    left:150px;
+    z-index:5;
+}
+
+.bg_6{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-color:#ffffff;
+    position:absolute;
+    top:180px;
+    left:180px;
+    z-index:6;
+}
+
+.top{
+    height:250px;
+    position:relative;
+    background-color:transparent;
+    /*   border-top-left-radius:900px; */
+    /*   boder-top-right-radius:900px; */
+}
+
+.stars{
+    background:url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 7;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.moon{
+    width:50px;
+    height:50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff,0 0 10px #1E2D49,0 0 90px #fff;
+    position: absolute;
+    left:130px;
+    top:150px;
+}
+
+.dome{
+    width:35px;
+    height:35px;
+    background-color:#1E2D49;
+    z-index:50;
+    position:absolute;
+    transform-origin:0 100%;
+    transform:rotate(45deg);
+    left:330px;
+    top:125px;
+}
+
+.fan{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    position:absolute;
+    top:155px;
+    left:350px;
+    background:#37475E;
+    z-index:100;
+    animation-name:rotate_fan;
+    animation-duration:6s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes rotate_fan{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate_fan{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.fan_blade_1,.fan_blade_2,.fan_blade_3,.fan_blade_4{
+    width:4px;
+    height:60px;
+    background-color:#37475E;
+    position:absolute;
+    z-index:6;
+    margin-left:3px;
+    margin-top:10px;
+    border-left:1.5px solid #000;
+    border-top:1px solid #000;
+    transform:rotate(180deg);
+}
+
+.fan_blade_2{
+    transform:rotate(90deg);
+    margin-left:38px;
+    margin-top:-24px;
+}
+
+.fan_blade_3{
+    transform:rotate(270deg);
+    margin-left:-32px;
+    margin-top:-24px;
+}
+
+.fan_blade_4{
+    transform:rotate(0deg);
+    margin-top:-60px;
+}
+
+.fan_blade_1::before,.fan_blade_2::before,.fan_blade_3::before,.fan_blade_4::before{
+    content:"";
+    width:20px;
+    height:45px;
+    /*   background-color:transparent; */
+    background-image:linear-gradient(to left,#b5bdc7 2px,transparent 25px),linear-gradient(to bottom, #fff 2px, transparent 1px);
+    position:absolute;
+    background-size:10px 11px;
+    margin-left:5px;
+}
+
+.mill{
+    width:50px;
+    height:140px;
+    background-color:#1E2D49;
+    position:absolute;
+    top:150px;
+    left:330px;
+    transform:perspective(12px) rotateX(3deg);
+    z-index:50;
+}
+
+.mill::before{
+    content:"";
+    width:20px;
+    height:20px;
+    background-color:#FDC500;
+    position:absolute;
+    left:15px;
+    top:40px;
+}
+
+.mill::after{
+    content:"";
+    width:20px;
+    height:25px;
+    background-color:#FDC500;
+    position:absolute;
+    left:15px;
+    top:75px;
+}
+
+.floor{
+    width:500px;
+    height:20px;
+    background-color:#1E2D49;
+    position:absolute;
+    top:320px;
+    left:16px;
+    z-index:8;
+}
+
+.floor::before{
+    content:"";
+    width:200px;
+    height:50px;
+    position:absolute;
+    /*transform:rotateX(45deg);*/
+    background-color:#1E2D49;
+    border-radius: 50% 90% 0 0;
+    left:-5px;
+    top:-30px;
+    z-index: 50;
+}
+
+.floor::after{
+    content:"";
+    width:400px;
+    height:48px;
+    position:absolute;
+    background-color:#1E2D49;
+    border-radius:100% 100% 0 0;
+    left:120px;
+    top:-40px;
+    z-index: 50;
+}
+
+.bottom{
+    opacity: 0.4;
+    -webkit-filter:blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: scaleY(-1);
+    position: relative;
+    top:150px;
+    /*display: inline-block;*/
+    z-index: 10;
+    height:250px;
+}
+.water{
+    width:500px;
+    height:300px;
+    background-image: radial-gradient(100px at top, #87bcb3 0%,#22668e 100%);
+    position: absolute;
+    top:340px;
+    z-index: 9;
+}
